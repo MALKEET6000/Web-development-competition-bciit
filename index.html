@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Student Grade Management System</title>
+</head>
+
+<body>
+  <h1>Student Grade Management System</h1>
+
+  <h2>Register User</h2>
+  <form id="registerForm">
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Register</button>
+  </form>
+
+  <h2>Add Student</h2>
+  <form id="studentForm">
+    <input type="text" id="studentName" placeholder="Student Name" required>
+    <button type="submit">Add Student</button>
+  </form>
+
+  <h2>Add Grade</h2>
+  <form id="gradeForm">
+    <input type="number" id="studentId" placeholder="Student ID" required>
+    <input type="number" id="score" placeholder="Grade" required>
+    <button type="submit">Add Grade</button>
+  </form>
+
+  <h2>View Grades</h2>
+  <input type="number" id="viewStudentId" placeholder="Student ID" required>
+  <button id="viewGradesButton">View Grades</button>
+  <ul id="gradesList"></ul>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
